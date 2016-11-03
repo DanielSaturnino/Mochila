@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.8.9)
-project(Solucion)
+project(Mochila)
 
 include_directories(include)
 
-set(SOURCES src/Solucion.cpp src/Dinamica.cpp src/Archivos.cpp src/main.cpp)
+set(SOURCES src/Solucion.cpp src/Mochila.cpp src/Archivos.cpp src/main.cpp)
 
-add_executable(Solucion ${SOURCES})
+add_executable(Mochila ${SOURCES})

@@ -1,5 +1,5 @@
-#include "Dinamica.h"
-void  Dinamica::ArmaMatriz(int i,int j){
+#include "Mochila.h"
+void  Mochila::ArmaMatriz(int i,int j){
 	int x=0,f=j-2,ganam;
 	for(int q=0;q<=j;q++){
 			Mochila[0][q+1]=x;
@@ -29,16 +29,7 @@ void  Dinamica::ArmaMatriz(int i,int j){
 	}
 }
 
-void Dinamica::Mostrar(int i,int j){
-	for(int z=0;z<=i;z++){
-		for(int q=0;q<=j;q++){
-			cout <<Mochila[z][q]<<"  ";
-		}
-		cout<<""<< endl;
-	}
-}
-
-void Dinamica::Solucion(int i,int j){
+void Mochila::Solucion(int i,int j){
 	int a=1,x=0,q=0;
 	while(i){
 		if(Mochila[i][a]!=Mochila[i][a+1]){
@@ -50,5 +41,14 @@ void Dinamica::Solucion(int i,int j){
 			a++;
 			x++;
 		}
+	}
+}
+
+void Mochila::Mostrar(int i,int j){
+	for(int z=0;z<=i;z++){
+		for(int q=0;q<=j;q++){
+			std::cout<<Mochila[z][q]<<"  ";
+		}
+		std::cout<<""<<std::endl;
 	}
 }

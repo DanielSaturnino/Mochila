@@ -1,6 +1,6 @@
 #include "Archivos.h"
 
-class Dinamica{
+class Mochila{
 
 public:
 	int Ganancia[10000];

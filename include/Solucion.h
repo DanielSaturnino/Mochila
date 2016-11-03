@@ -1,4 +1,4 @@
-#include "Dinamica.h"
+#include "Mochila.h"
 
 class Solucion
 {

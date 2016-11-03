@@ -1,9 +1,9 @@
 #include "Archivos.h"
-fstream fichero;
+std::fstream fichero;
 
 int  Archivos::Leer(){
 	int i=6,j=0,Mochola;
-    fichero.open("Mochila.txt",ios::in);
+    fichero.open("Mochila.txt",std::ios::in);
         while (! fichero.eof()){
         	if(i==6){
         		fichero >> Mochola;

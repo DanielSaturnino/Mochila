@@ -2,10 +2,10 @@
 void Solucion::Resuelve(){
 	int j,i;
 	Archivos a = Archivos();
-	Dinamica b = Dinamica();
+	Mochila b = Mochila();
 	i=a.Leer();
 	j=a.NumItem;
-	cout <<"La matriz es de "<<i<<" por "<<j<<"por lotanto son "<<j-1<<"Items" <<endl;
+	std::cout<<"La matriz es de "<<i<<" por "<<j<<"por lotanto son "<<j-1<<"Items"<<std::endl;
 
 	for(int z=0;z!=j-1;z++){
 		b.Ganancia[z]=a.Item[z].Ganancia;
@@ -16,13 +16,13 @@ void Solucion::Resuelve(){
 	b.Mostrar(i,j);
 	b.Solucion(i,j);
 	int pes=0;
-	cout <<"Lista de Items opttimos "<< endl;
+	std::cout<<"Lista de Items opttimos "<<std::endl;
 	for(int g=0;g!=i;g++){
 		if(b.MochilaSolucion[g]==1){
-			cout <<a.Item[g].Heramienta<< " ";
+			std::cout<<a.Item[g].Heramienta<< " ";
 			pes=a.Item[g].Ganancia+pes;
 		}
 	}
-			cout << endl;
-	cout <<"Ganancia optima"<<pes<< endl;
+			std::cout<<std::endl;
+	std::cout<<"Ganancia optima"<<pes<<std::endl;
 }
