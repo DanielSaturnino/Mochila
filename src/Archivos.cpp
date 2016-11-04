@@ -2,9 +2,11 @@
 std::fstream fichero;
 
 int  Archivos::Leer(){
+  char linea[128];
 	int i=6,j=0,Mochola;
     fichero.open("Mochila.txt",std::ios::in);
-        while (! fichero.eof()){
+        while (! fichero.eof()){   
+        fichero.getline(linea,sizeof(linea));     
         	if(i==6){
         		fichero >> Mochola;
         		i=0;
@@ -19,7 +21,8 @@ int  Archivos::Leer(){
        		if(i==3){
        			i=0;
        			j++;
-       		}    
+       		}  
+          std::cout<<Mochola<<std::endl;  
         }
     NumItem=j+1;  
     fichero.close();
