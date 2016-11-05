@@ -1,22 +1,26 @@
+/*
+Nombres:Rodrigo Mayett Guzman
+    Daniel Manzano Saturnino
+    */
 #include "Archivos.h"
-std::fstream fichero;
+std::fstream archivo;
 std::string frase;
 
 int  Archivos::Leer(){
   char linea[128];
 	int i=6,j=0,Mochola;
-    fichero.open("Mochila.txt",std::ios::in);
-        while (! fichero.eof()){
-        getline(fichero,frase);       
+    archivo.open("Mochila.txt",std::ios::in);
+        while (! archivo.eof()){
+        getline(archivo,frase);       
         	if(i==6){
-        		fichero >> Mochola;
+        		archivo >> Mochola;
         		i=0;
         	}if(i==0){
-       			fichero >> Item[j].Peso;
+       			archivo >> Item[j].Peso;
        		}if(i==1){
-       			fichero >> Item[j].Ganancia;
+       			archivo >> Item[j].Ganancia;
        		}if(i==2){
-       			fichero>>Item[j].Heramienta;
+       			archivo>>Item[j].Heramienta;
        		}
        		i++;
        		if(i==3){
@@ -26,6 +30,6 @@ int  Archivos::Leer(){
           std::cout<<frase<<std::endl;  
         }
     NumItem=j+1;  
-    fichero.close();
+    archivo.close();
     return Mochola;
 }

@@ -1,3 +1,12 @@
+/*
+Nombres:Rodrigo Mayett Guzman
+		Daniel Manzano Saturnino
+Descripicion:
+Esta clase archivos lee el archivo de la mochila
+para poder dar solucion hacemos uso de las librerias
+iostream,fstream y cstring para usar notacion de lenguaje
+c 
+*/
 #include <iostream>
 #include <fstream>
 #include <cstring>

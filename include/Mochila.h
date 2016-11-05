@@ -1,5 +1,13 @@
+/*
+Nombres:Rodrigo Mayett Guzman
+		Daniel Manzano Saturnino
+Descripicion:
+Esta clase se encarga de realizar los movimientos
+y la parte logica del algoritmo de la mochila 
+crea los arreglos necesarios y arma la tabla la 
+resuelve y muestra la informacion
+*/
 #include "Archivos.h"
-
 class Mochila{
 
 public:

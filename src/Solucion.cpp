@@ -1,4 +1,13 @@
+/*
+Nombres:Rodrigo Mayett Guzman
+		Daniel Manzano Saturnino
+
+*/
 #include "Solucion.h"
+/*para resolver necesitamos crear dos instancias una de 
+la clase archivos y la otra de mochila de esta forma
+tenemos acceso a sus metodos y atributos y podemos dar solucion al algoritmo
+como se vio en clase*/		
 void Solucion::Resuelve(){
 	int j,i;
 	Archivos a = Archivos();
